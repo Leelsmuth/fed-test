@@ -62,3 +62,10 @@ $ npm start
 
 Otherwise, simply open the `index.html` file located within the `src` folder
 in your favourite web browser.
+
+### Added Notes
+
+- I fixed the syntax issue on main.js ( the chrome devtool came in handy)
+- Styling was added
+- To cater for when the data set increases, I would either use infinite scrolling or pagination. 
+  for infinite scrolling, the IntersectionObserver(https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) API comes in handy.
