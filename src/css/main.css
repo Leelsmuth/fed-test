@@ -59,6 +59,77 @@
 }
 
 /* Begin styling the report items here! */
-.reports {
-
+.layout {
+  background: #2b3034;
+  font-family: Arial, Helvetica, sans-serif;
 }
+.layout_header {
+  background: #23272a;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.reports {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.reports_item {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.reports_item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+.reports_cover {
+  margin-bottom: 10px;
+  max-width: 100%;
+}
+.reports_docs {
+  background: #23272a;
+  padding: 7px 0;
+}
+.reports_title {
+  margin: 0;
+  font-size: 0.75rem;
+}
+.reports_title:first-child {
+  margin-bottom: 5px;
+}
+.reports_title a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.report_size {
+  color: #8a8c8d;
+}
+/* Media queries */
+@media screen and (max-width: 768px) {
+  .reports_item {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+  }
+  .reports_title {
+    font-size: 0.625rem;
+  }
+  .reports_item:not(:nth-child(3n)) {
+    margin-right: 0;
+  }
+  .reports_item:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .reports_item {
+    margin-bottom: 15px;
+  }
+  .reports_item:not(:nth-child(2n)) {
+    margin-right: 15px;
+  }
+} 
